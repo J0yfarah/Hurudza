@@ -1,0 +1,7 @@
+{
+  "name": "SmartFarm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

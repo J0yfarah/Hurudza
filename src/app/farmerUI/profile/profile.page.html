@@ -1,0 +1,40 @@
+<ion-menu side="start" menuId="menu" contentId="main" type="overlay">
+
+
+
+
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+<ion-header>
+  <ion-menu-button menuID="menu"><ion-icon name="grid" class="menubtn"></ion-icon></ion-menu-button>
+</ion-header>
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom" color="white">
+    <!------------------------------------->
+    <ion-tab-button tab="weather">
+      <ion-icon name="cloudy-night" color="primary"></ion-icon>
+      <!-- <ion-label>home</ion-label> -->
+      <!-- <ion-badge>6</ion-badge> -->
+    </ion-tab-button>
+    <!------------------------------------->
+
+    <ion-tab-button tab="field">
+      <ion-icon name="leaf" color="primary"></ion-icon>
+      <!-- <ion-label>menu</ion-label> -->
+    </ion-tab-button>
+    <!------------------------------------->
+
+    <!------------------------------------->
+    <ion-tab-button tab="blog">
+      <ion-icon name="earth" color="primary"></ion-icon>
+      <!-- <ion-label>Map</ion-label> -->
+    </ion-tab-button>
+    <!------------------------------------->
+    <ion-tab-button tab="stats">
+      <ion-icon name="stats-chart" color="primary"></ion-icon>
+      <!-- <ion-label>Map</ion-label> -->
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

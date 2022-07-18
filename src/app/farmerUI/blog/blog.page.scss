@@ -1,0 +1,55 @@
+.lf{
+    border-top-left-radius:100px;
+    border-bottom-right-radius:100px;
+    width: 250px;
+    height:100px;
+    position:absolute;
+    top:0px;
+    right: 0;
+}
+  .l1{
+      background-color: var(--ion-color-secondary-shade);
+    right: 0px;
+      
+    }
+    .l2{
+        background-color: var(--ion-color-secondary);;
+       right: 50px;
+    }
+  .l3{
+      background-color:var(--ion-color-secondary-tint);
+      right: 100px; 
+    }
+   .l4{
+background-color: var(--ion-color-success);
+right: 150px;
+
+      }
+     .title{
+         color: var(--ion-color-primary-shade);
+         position: relative;
+         top: 50px;
+         left: 10px;
+     }
+     @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+   .title h1{
+    font-size: 40px;
+    font-family: 'Fredoka One', cursive;
+   }
+   .twt{
+     margin-top: 40px;
+   }
+.tweet {
+  margin-top: -10px;
+}
+.tweet ion-label {
+  line-height: 1!important;
+  font-size: 15px;
+  margin: 6px 0px 6px 0px!important;
+  min-height: 34px;
+}
+.tweet-img {
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 10px;
+}

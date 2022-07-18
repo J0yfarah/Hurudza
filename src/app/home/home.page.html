@@ -1,0 +1,29 @@
+
+
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center background">
+    <img src="../../assets/logo.png" class="logo" />
+
+    <div class="title">
+        <h2 class="welcome">Let's get started!</h2>
+        <!-- <p></p> --></div>
+
+    <div class="ion-margin-bottom">
+      <ion-input  clear-input aria-required="true"  placeholder="Email"  type="email" class="primary-input" [(ngModel)]="email_user"></ion-input>
+      <ion-input  clear-input aria-required="true"  placeholder="Password" type="password" class="primary-input" [(ngModel)]="password_user"></ion-input>
+    
+      <div class="ion-margin-top ion-text-right forget">
+        <a (click)="forgot()">Forgot Password?</a>
+      </div>
+    
+      <div class="ion-margin-top">
+        <ion-button shape="round" expand="block" (click)="login()">Log in</ion-button>
+      </div>
+        <h4 class="ss">Or create an account:</h4>
+        
+        <ion-button shape="round" expand="block" (click)="gotosignup()" fill="clear">Sign Up</ion-button>
+    </div>
+</ion-content>

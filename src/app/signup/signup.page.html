@@ -1,0 +1,19 @@
+
+<ion-content class="ion-padding register-modal modal-wrapper">
+  <div class="title">
+    <h4>Signup</h4>
+    <p>Register with HURUDZA to get started</p>
+  </div>
+  <ion-input placeholder="Email" type="email" class="primary-input" [(ngModel)]="email_user"></ion-input>
+
+  <ion-input placeholder="Password" type="password" class="primary-input" [(ngModel)]="password_user"></ion-input>
+  <ion-input placeholder="Confirm Password" type="password" class="primary-input" [(ngModel)]="confirmpassword_user"></ion-input>
+
+  <div class="ion-margin-top">
+    <ion-button shape="round" expand="block" (click)="next()">Next</ion-button>
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="goback()">Go back</a>
+  </div>
+</ion-content>
