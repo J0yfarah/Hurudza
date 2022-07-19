@@ -1,5 +1,42 @@
 <ion-menu side="start" menuId="menu" contentId="main" type="overlay">
+  <ion-content class="profile">
 
+    <div class="header">
+
+
+      <div class="cover-box">
+        <img src="../../../assets/corn.jpg">
+      </div>
+
+    </div>
+    <div class="flex">
+      <div class="border-orange">
+        <div class="border-white">
+          <div class="img-box">
+            <img src="../../../assets/user.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+<h2>{{datauser.name_user}} </h2>
+<ion-button (click)="dismiss()" expand="block" fill="clear" shape="round">
+  Edit Profile
+</ion-button>
+<ion-list class="profile">
+  <ion-item  >
+    <ion-icon name="call-outline"></ion-icon>   <p>+213 {{datauser.tel_user}}</p>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="location-outline"></ion-icon> <p>{{datauser.location_user}} , Algeria</p>
+  </ion-item>
+  <ion-item>
+     <ion-icon name="mail-outline"></ion-icon><p>{{datauser.email_user}}</p>
+  </ion-item>
+</ion-list>
+<ion-button (click)="logout()" expand="block" fill="clear" shape="round">
+  log out
+</ion-button>
+</ion-content>
 
 
 

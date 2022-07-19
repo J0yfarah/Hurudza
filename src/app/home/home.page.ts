@@ -35,18 +35,18 @@ export class HomePage {
 
          if(result.result==true){
 
-        //  localStorage.setItem("data", JSON.stringify(result.data));
+         localStorage.setItem("data", JSON.stringify(result.data));
          this.router.navigate(['profile'])
-        // let type_user  = result.data['type_user'];
-        // switch(type_user){
-        //   case "1" : alert("1"); this.router.navigate(['profile']); break;
-        //   case "2" : alert("2");this.router.navigate(['profile']); break;
-        //   default: alert("default");  this.router.navigate(['login']); break;
-        // }
+        let type_user  = result.data['type_user'];
+        switch(type_user){
+          case "1" : this.router.navigate(['profile']); break;
+          case "2" : this.router.navigate(['profile']); break;
+          default:   this.router.navigate(['login']); break;
+        }
 
        }
        else{
-         alert(result.error_code);
+         console.log(result.error_code);
        }
 
      }
