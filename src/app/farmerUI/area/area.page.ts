@@ -15,4 +15,7 @@ export class AreaPage implements OnInit {
   async dismiss() {
     await this.modalCtrl.dismiss();
   }
+  async calcule(){
+    console.log("ok")
+  }
 }

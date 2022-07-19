@@ -1,10 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>area</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="title">
+    <h1>Calculate the area of your field </h1>
+  </div>
+  <div class="calcul">
+    <ion-input type="number" placeholder="Length"></ion-input> <ion-item>
+      <ion-select interface="popover" placeholder="Select unit">
+        <ion-select-option value="apples">feet</ion-select-option>
+        <ion-select-option value="oranges">yards</ion-select-option>
+        <ion-select-option value="bananas">miles</ion-select-option>
+        <ion-select-option value="bananas">meters</ion-select-option>
+        <ion-select-option value="bananas">kilometers</ion-select-option>
+        <ion-select-option value="bananas">hectar</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-input type="number" placeholder="Width"></ion-input>
+    <ion-button (click)="calcule()">
+      <ion-icon slot="icon-only" name="calculator"></ion-icon>
+    </ion-button>
+  </div>
  <ion-button (click)="dismiss()" expand="block" fill="clear" shape="round">
    Go back
  </ion-button>

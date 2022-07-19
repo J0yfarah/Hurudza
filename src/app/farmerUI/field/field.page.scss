@@ -2,7 +2,7 @@
     border-top-left-radius:100px;
     border-bottom-right-radius:100px;
     width: 250px;
-    height:150px;
+    height:100px;
     position:absolute;
     top:0px;
     right: 0;
@@ -28,7 +28,7 @@ right: 150px;
      .title{
          color: var(--ion-color-primary-shade);
          position: relative;
-         top: 100px;
+         top: 50px;
          left: 10px;
      }
      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
@@ -40,11 +40,11 @@ right: 150px;
      display: grid;
 align-items: center;
 justify-content: center;
-margin-top: 120px;
-padding: 25px;
+margin-top: 70px;
+// padding: 25px;
 }
 .btnmargin{
     height: 50px;
     width: auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
